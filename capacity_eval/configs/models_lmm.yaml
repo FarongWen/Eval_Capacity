@@ -1,7 +1,7 @@
 models:
-  # --- calibration models (3) ---
+  # --- calibration models (10) ---
 
-  - name: gpt-4o-v
+  - name: gpt-4o
     type: api
     provider: openai
     model_id: gpt-4o
@@ -12,7 +12,7 @@ models:
     supports_vision: true
     group: calibration
 
-  - name: gemini-1.5-pro-v
+  - name: gemini-1.5-pro
     type: api
     provider: openai
     model_id: gemini-1.5-pro
@@ -23,7 +23,7 @@ models:
     supports_vision: true
     group: calibration
 
-  - name: claude-3-haiku-v
+  - name: claude-3-haiku
     type: api
     provider: anthropic
     model_id: claude-3-haiku-20240307
@@ -33,10 +33,12 @@ models:
     max_tokens: 10
     supports_vision: true
     group: calibration
+    
+  # ...
+  
+  # --- validation models (20) ---
 
-  # --- validation models (5) ---
-
-  - name: gpt-4o-2024-11-20-v
+  - name: gpt-4o-2024-11-20
     type: api
     provider: openai
     model_id: gpt-4o-2024-11-20
@@ -47,7 +49,7 @@ models:
     supports_vision: true
     group: validation
 
-  - name: claude-3-5-sonnet-v
+  - name: claude-3-5-sonnet
     type: api
     provider: anthropic
     model_id: claude-3-5-sonnet-20241022
@@ -58,7 +60,7 @@ models:
     supports_vision: true
     group: validation
 
-  - name: gemini-1.5-flash-002-v
+  - name: gemini-1.5-flash-002
     type: api
     provider: openai
     model_id: gemini-1.5-flash-002
@@ -69,10 +71,10 @@ models:
     supports_vision: true
     group: validation
 
-  - name: qwen-vl-max-0809-v
+  - name: qwenl-max-0809
     type: api
     provider: dashscope
-    model_id: qwen-vl-max-0809
+    model_id: qwenl-max-0809
     api_key_env: DASHSCOPE_API_KEY
     base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
     temperature: 0.2
@@ -80,13 +82,15 @@ models:
     supports_vision: true
     group: validation
 
-  - name: qwen2-vl-72b-v
+  - name: qwen2l-72b
     type: api
     provider: dashscope
-    model_id: qwen2-vl-72b-instruct
+    model_id: qwen2l-72b-instruct
     api_key_env: DASHSCOPE_API_KEY
     base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
     temperature: 0.2
     max_tokens: 10
     supports_vision: true
     group: validation
+
+  # ...
