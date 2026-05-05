@@ -1,5 +1,5 @@
 models:
-  # --- calibration models (3) ---
+  # --- calibration models (10) ---
 
   - name: gpt-4o-2024-05-13
     type: api
@@ -34,7 +34,9 @@ models:
     supports_vision: false
     group: calibration
 
-  # --- validation models (5) ---
+  # ...  
+
+  # --- validation models (20) ---
 
   - name: gpt-4.1-mini
     type: api
@@ -90,3 +92,5 @@ models:
     max_tokens: 100
     supports_vision: false
     group: validation
+
+ # ...
