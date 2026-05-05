@@ -1,0 +1,92 @@
+models:
+  # --- calibration models (3) ---
+
+  - name: gpt-4o-2024-05-13
+    type: api
+    provider: openai
+    model_id: gpt-4o-2024-05-13
+    api_key_env: OPENAI_API_KEY
+    base_url: https://api.openai.com/v1/
+    temperature: 0.2
+    max_tokens: 100
+    supports_vision: false
+    group: calibration
+
+  - name: gemini-2.5-flash-thinking
+    type: api
+    provider: openai
+    model_id: gemini-2.5-flash-thinking
+    api_key_env: GEMINI_API_KEY
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+    temperature: 0.2
+    max_tokens: 100
+    supports_vision: false
+    group: calibration
+
+  - name: deepseek-v3
+    type: api
+    provider: openai
+    model_id: deepseek-v3
+    api_key_env: DEEPSEEK_API_KEY
+    base_url: https://api.deepseek.com/v1/
+    temperature: 0.2
+    max_tokens: 100
+    supports_vision: false
+    group: calibration
+
+  # --- validation models (5) ---
+
+  - name: gpt-4.1-mini
+    type: api
+    provider: openai
+    model_id: gpt-4.1-mini
+    api_key_env: OPENAI_API_KEY
+    base_url: https://api.openai.com/v1/
+    temperature: 0.2
+    max_tokens: 100
+    supports_vision: false
+    group: validation
+
+  - name: gpt-5
+    type: api
+    provider: openai
+    model_id: gpt-5
+    api_key_env: OPENAI_API_KEY
+    base_url: https://api.openai.com/v1/
+    temperature: 0.2
+    max_tokens: 100
+    supports_vision: false
+    group: validation
+
+  - name: gemini-3-flash-preview
+    type: api
+    provider: openai
+    model_id: gemini-3-flash-preview
+    api_key_env: GEMINI_API_KEY
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+    temperature: 0.2
+    max_tokens: 100
+    supports_vision: false
+    group: validation
+
+  - name: deepseek-v3-2-251201
+    type: api
+    provider: openai
+    model_id: deepseek-v3-2-251201
+    api_key_env: DEEPSEEK_API_KEY
+    base_url: https://api.deepseek.com/v1/
+    temperature: 0.2
+    max_tokens: 100
+    supports_vision: false
+    group: validation
+
+  - name: claude-3.5-sonnet
+    type: api
+    provider: openai
+    model_id: claude-3-5-sonnet-20241022
+    api_key_env: ANTHROPIC_API_KEY
+    base_url: https://api.anthropic.com/v1/
+    temperature: 0.2
+    max_tokens: 100
+    supports_vision: false
+    group: validation
